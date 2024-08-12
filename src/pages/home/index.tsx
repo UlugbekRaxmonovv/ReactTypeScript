@@ -3,6 +3,7 @@ import { useGetProductsQuery } from "../../context/api/productApi";
 import Products from "../../components/product";
 import Category from "../../components/category";
 
+// No need to redefine Product interface as it's already defined in productApi
 const Home: React.FC = () => {
   const [count, setCount] = useState<number>(4);
   const params = { limit: count };
@@ -22,7 +23,7 @@ const Home: React.FC = () => {
         category={category}
       />
       <Products
-        products={data?.products} 
+        products={data?.products || []} // Safely access products array
         setCount={setCount}
       />
     </>
