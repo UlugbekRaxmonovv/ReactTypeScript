@@ -46,7 +46,8 @@ const CategoryComponent: React.FC<CategoryComponentProps> = ({
           <li>
             <data
               onClick={() => {
-                setCategory(""), sessionStorage.setItem("category", "");
+                setCategory("")
+                sessionStorage.setItem("category", "");
               }}
               value={""}
               style={{
