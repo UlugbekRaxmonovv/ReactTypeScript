@@ -3,7 +3,7 @@ import { ProductsSchema } from "../../../src/context/types/index";
 import './Products.css';
 
 interface ProductsProps {
-    products: ProductsSchema[] | undefined;
+    products: ProductsSchema[] | un;
     setCount: React.Dispatch<React.SetStateAction<number>>;
 }
 
@@ -24,7 +24,7 @@ const Products: React.FC<ProductsProps> = ({ products, setCount }) => {
                 {links}
             </div>
             <div className="btn">
-                <button onClick={() => setCount(prevCount => prevCount + 4)}>Submit</button>
+                <button onClick={() => setCount(prevCount => prevCount + 4)}>Submits</button>
             </div>
         </div>
     );
