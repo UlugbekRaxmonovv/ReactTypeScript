@@ -3,7 +3,7 @@ import { ProductsSchema } from "../../../src/context/types/index";
 import './Products.css';
 
 interface ProductsProps {
-    products: ProductsSchema[] | un;
+    products: ProductsSchema[] | undefined;
     setCount: React.Dispatch<React.SetStateAction<number>>;
 }
 
