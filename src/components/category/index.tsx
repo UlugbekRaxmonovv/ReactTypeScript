@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetProductCategoriesQuery } from '../../context/api/productApi';
+import { useGetProductCategoriesQuery } from "@/context/api/productApi";
 import './Category.css'
 interface CategoryComponentProps {
   setCategory: React.Dispatch<React.SetStateAction<string>>;

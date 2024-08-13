@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductsSchema } from "../../../src/context/types/index";
+import { ProductsSchema } from "@/context/types";
 import './Products.css';
 
 interface ProductsProps {

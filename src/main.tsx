@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { store } from './context/store.js'  
+import { store } from './context/store'   
 
 
 createRoot(document.getElementById('root')!).render(

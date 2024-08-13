@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useGetProductsQuery } from "../../context/api/productApi";
-import Products from "../../components/product";
-import Category from "../../components/category";
+import { useGetProductsQuery } from "@/context/api/productApi";
+import Products from "@/components/product";
+import CategoryComponent from "@/components/category";
 
 const Home: React.FC = () => {
   const [count, setCount] = useState<number>(4);
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Category
+      <CategoryComponent
         isFetching={isFetching}
         setCategory={setCategory}
         category={category}
