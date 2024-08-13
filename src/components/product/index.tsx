@@ -26,7 +26,7 @@ const Products: React.FC<ProductsProps> = ({ products, setCount }) => {
                 {links}
             </div>
             <div className="btn">
-                <button onClick={() => setCount(prevCount => prevCount + 4)}>Increment Count</button>
+                <button onClick={() => setCount(prevCount => prevCount + 4)}>Submit</button>
             </div>
         </div>
     );
