@@ -1,4 +1,4 @@
-import Home from './pages/home' 
+import Home from './pages/home'  
 import About from './pages/about'
 import { Route,Routes } from 'react-router-dom'
 import Login from './pages/login'
@@ -9,7 +9,7 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
+function App():JSX.Element {
 
   return (
     <>
