@@ -2,13 +2,12 @@ import React from "react";
 import { ProductsSchema } from "../../../src/context/types/index";
 import './Products.css';
 
-// interface ProductsProps {
-//     products: ProductsSchema[];
-//     setCount: React.Dispatch<React.SetStateAction<number>>;
-// }
+interface ProductsProps {
+    products: ProductsSchema[] | undefined;
+    setCount: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const Products: React.FC<{products:ProductsSchema[]}> = ({ products }) => {
-
+const Products: React.FC<ProductsProps> = ({ products, setCount }) => {
     const links: JSX.Element[] | undefined = products?.map((product:ProductsSchema) => (
         <div key={product.id} className="card">
             <div className="img">
@@ -25,7 +24,7 @@ const Products: React.FC<{products:ProductsSchema[]}> = ({ products }) => {
                 {links}
             </div>
             <div className="btn">
-                {/* <button onClick={() => setCount(prevCount => prevCount + 4)}>Submit</button> */}
+                <button onClick={() => setCount(prevCount => prevCount + 4)}>Submit</button>
             </div>
         </div>
     );

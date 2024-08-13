@@ -4,8 +4,8 @@ import Products from "../../components/product";
 import Category from "../../components/category";
 
 const Home: React.FC = () => {
-  // const [count, setCount] = useState<number>(4);
-  const params = { limit: 8 };
+  const [count, setCount] = useState<number>(4);
+  const params = { limit: count };
 
   const [category, setCategory] = useState<string>(
     sessionStorage.getItem("category") || ""
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       />
       <Products
         products={data?.products} 
-        // setCount={setCount}
+        setCount={setCount}
       />
     </>
   );
